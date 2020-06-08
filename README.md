@@ -5,19 +5,23 @@
 
 Estas librerias realizan el proceso de proyección del PIB en Panama, así como proyecciones para otras variables de interes relevantes. Estas librerias constan de los siguientes archivos:
 
+<ol> 
+
+### <li> Bases de Datos <li>
+    
 ### ConstruccionBasedeDatos
 
 En este programa se construye la base de datos usada para las estimaciones y proyecciones, se calculan los estadisticos descriptivos y als correlaciones.
 
 
-## Estimaciones ARIMA
+### <li> Estimaciones ARIMA <li>
 
 ### ARIMA
 
 Se realizan la estimacion, proyeccion y evaluacion de los modelos ARIMA.
 
 
-## Estimaciones Kalman interpolacion
+### <li> Estimaciones Kalman interpolacion <li>
 
 ### Kalman
 
@@ -31,7 +35,7 @@ Se realiza la interpolacion y proyeccion usando el método de Kalman.
 
 Se realiza la evaluación del modelo de interpolacion.
 
-## Estimaciones Nowcast
+### <li> Estimaciones Nowcast <li>
 
 ### nowcast
 
@@ -45,6 +49,7 @@ Libreria auxiliar.
 
 Se realiza la proyeccion usando el método de nowcast.
 
+<ol> 
 
 ## Carpetas
 
@@ -65,23 +70,26 @@ En esta carpeta se guardan los resultados de las estimaciones del programa kalma
 
 En esta carpeta se guardan los resultados de las proyecciones de los distintos procesos:
 
-#### bd_all_estimacion
+<ol> 
+
+#### <li> bd_all_estimacion <li>
 
 Bases usadas para las estimaciones.
 
-#### baseARIMA
+#### <li> baseARIMA <li>
 
 Proyecciones ARIMA
 
-#### baseInterpolacion
+#### <li> baseInterpolacion <li>
 
 Proyeccion usando el metodo de interpolacion
 
-#### baseNowcasting
+#### <li> baseNowcasting <li>
 
 Proyeccion usando el metodo de nowcast
 
-
+<ol> 
+    
 ## Proceso de proyecciones
 
 ### Proyeccion mensual - ARIMA
