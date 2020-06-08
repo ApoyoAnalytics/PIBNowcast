@@ -1,6 +1,10 @@
 # Librerias de Proyeccion
 
 
+## Instaladores
+
+Para instalar todas las librerias requeridas para realizar las estimaciones y proyecciones use el programa Instaladores. Solo sera necesario usarlo una vez.
+
 ## Programas
 
 Estas librerias realizan el proceso de proyección del PIB en Panama, así como proyecciones para otras variables de interes relevantes. Estas librerias constan de los siguientes archivos:
