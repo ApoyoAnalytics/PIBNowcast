@@ -1,0 +1,103 @@
+# Librerias de Proyeccion
+
+
+## Programas
+
+Estas librerias realizan el proceso de proyección del PIB en Panama, así como proyecciones para otras variables de interes relevantes. Estas librerias constan de los siguientes archivos:
+
+### ConstruccionBasedeDatos
+
+En este programa se construye la base de datos usada para las estimaciones y proyecciones, se calculan los estadisticos descriptivos y als correlaciones.
+
+
+## Estimaciones ARIMA
+
+### ARIMA
+
+Se realizan la estimacion, proyeccion y evaluacion de los modelos ARIMA.
+
+
+## Estimaciones Kalman interpolacion
+
+### Kalman
+
+Se realiza la estimacion del modelo Kalman de interpolacion.
+
+### Interpolacion
+
+Se realiza la interpolacion y proyeccion usando el método de Kalman.
+
+### Evaluacion
+
+Se realiza la evaluación del modelo de interpolacion.
+
+## Estimaciones Nowcast
+
+### nowcast
+
+Se estima el modelo de nowcast.
+
+###  nowcast_kalman
+
+Libreria auxiliar.
+
+### proyeccion_nowcast
+
+Se realiza la proyeccion usando el método de nowcast.
+
+
+## Carpetas
+
+
+### inputs
+
+En esta carpeta se guarda el excel bd_Panama.xlsx, en donde se encuentran todas las series de las distintas frecuencias.
+
+### model_nowcast
+
+En esta carpeta se guardan los resultados de las estimaciones del programa nowcast.
+
+### model_interpol
+
+En esta carpeta se guardan los resultados de las estimaciones del programa kalman.
+
+### resultados
+
+En esta carpeta se guardan los resultados de las proyecciones de los distintos procesos:
+
+#### bd_all_estimacion
+
+Bases usadas para las estimaciones.
+
+#### baseARIMA
+
+Proyecciones ARIMA
+
+#### baseInterpolacion
+
+Proyeccion usando el metodo de interpolacion
+
+#### baseNowcasting
+
+Proyeccion usando el metodo de nowcast
+
+
+## Proceso de proyecciones
+
+### Proyeccion mensual - ARIMA
+
+1. Actualice la base de datos dentro de input: bd_Panama
+2. Corra el programa ARIMA
+3. Los resultados se guardan dentro de resultados con el nombre baseARIMA
+
+### Proyeccion mensual - Interpolacion
+
+1. Actualice la base de datos dentro de input: bd_Panama
+2. Corra el programa Interpolacion
+3. Los resultados se guardan dentro de resultados con el nombre baseInterpolacion
+
+### Proyeccion trimestral - Nowcasting
+
+1. Actualice la base de datos dentro de input: bd_Panama
+2. Corra el programa proyeccion_nowcast
+3. Los resultados se guardan dentro de resultados con el nombre baseNowcast
