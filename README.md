@@ -3,57 +3,53 @@
 
 ## Instaladores
 
-Para instalar todas las librerias requeridas para realizar las estimaciones y proyecciones use el programa Instaladores. Solo sera necesario usarlo una vez.
+Este programa sirve para instalar las librerias requeridas para realizar las estimaciones y proyecciones. Solo sera necesario usarlo una vez por cada maquina en la que se use.
 
-## Programas
+    
+## Proceso de proyecciones
 
-Estas librerias realizan el proceso de proyección del PIB en Panama, así como proyecciones para otras variables de interes relevantes. Estas librerias constan de los siguientes archivos:
+### Proyeccion mensual - ARIMA (p1ARIMA)
 
-<ol> 
+1. Actualice la base de datos dentro de input: bd_Panama
+2. Corra el programa p1ARIMA
+3. Los resultados se guardan dentro de la carpeta resultados con el nombre baseARIMA
 
-### <li> Bases de Datos </li>
+### Proyeccion mensual - Interpolacion (p2InterpolacionProyeccion)
+
+1. Actualice la base de datos dentro de input: bd_Panama
+2. Corra el programa p2InterpolacionProyeccion
+3. Los resultados se guardan dentro de la carpeta resultados con el nombre baseInterpolacion
+
+### Proyeccion trimestral - Nowcasting (p3nowcast)
+
+1. Actualice la base de datos dentro de input: bd_Panama
+2. Corra el programa p3_proyeccionnowcast
+3. Los resultados se guardan dentro de la carpeta resultados con el nombre baseNowcast
+
+## Programas de soporte
+
+Estas librerias realizan las estimaciones necesarias para tener los parámetros de cada modelo usado en los procesos de proyección.
     
 ### ConstruccionBasedeDatos
 
-En este programa se construye la base de datos usada para las estimaciones y proyecciones, se calculan los estadisticos descriptivos y als correlaciones.
+En este programa se construye la base de datos usada para las estimaciones y proyecciones, se calculan los estadisticos descriptivos y las correlaciones.
 
 
-### <li> Estimaciones ARIMA </li>
-
-### ARIMA
-
-Se realizan la estimacion, proyeccion y evaluacion de los modelos ARIMA.
-
-
-### <li> Estimaciones Kalman interpolacion </li>
-
-### Kalman
+### m1Kalman
 
 Se realiza la estimacion del modelo Kalman de interpolacion.
 
-### Interpolacion
-
-Se realiza la interpolacion y proyeccion usando el método de Kalman.
-
-### Evaluacion
+### m2Evaluacion
 
 Se realiza la evaluación del modelo de interpolacion.
 
-### <li> Estimaciones Nowcast </li>
-
-### nowcast
+### m3nowcast
 
 Se estima el modelo de nowcast.
 
-###  nowcast_kalman
+###  m4nowcast_kalman
 
 Libreria auxiliar.
-
-### proyeccion_nowcast
-
-Se realiza la proyeccion usando el método de nowcast.
-
-</ol> 
 
 ## Carpetas
 
@@ -93,23 +89,3 @@ Proyeccion usando el metodo de interpolacion
 Proyeccion usando el metodo de nowcast
 
 </ol> 
-    
-## Proceso de proyecciones
-
-### Proyeccion mensual - ARIMA
-
-1. Actualice la base de datos dentro de input: bd_Panama
-2. Corra el programa ARIMA
-3. Los resultados se guardan dentro de resultados con el nombre baseARIMA
-
-### Proyeccion mensual - Interpolacion
-
-1. Actualice la base de datos dentro de input: bd_Panama
-2. Corra el programa Interpolacion
-3. Los resultados se guardan dentro de resultados con el nombre baseInterpolacion
-
-### Proyeccion trimestral - Nowcasting
-
-1. Actualice la base de datos dentro de input: bd_Panama
-2. Corra el programa proyeccion_nowcast
-3. Los resultados se guardan dentro de resultados con el nombre baseNowcast
