@@ -3,8 +3,7 @@
 
 ## Instaladores
 
-Este programa sirve para instalar las librerias requeridas para realizar las estimaciones y proyecciones. Solo sera necesario usarlo una vez por cada maquina en la que se use.
-
+Este programa sirve para instalar las librerias requeridas para realizar las estimaciones y proyecciones. 
     
 ## Proceso de proyecciones
 
@@ -74,7 +73,7 @@ En esta carpeta se guardan los resultados de las proyecciones de los distintos p
 
 #### <li> bd_all_estimacion </li>
 
-Bases usadas para las estimaciones.
+Bases consolidada usadas para las estimaciones.
 
 #### <li> baseARIMA </li>
 
