@@ -8,8 +8,6 @@ Este programa sirve para instalar las librerias requeridas para realizar las est
 ## Proceso de proyecciones
 
 
-![alt text](https://github.com/ApoyoAnalytics/PIBNowcast/blob/cambio_de_nombre/proceso.jpg?raw=true)
-
 ### Proyeccion mensual - ARIMA (p1ARIMA)
 
 1. Actualice la base de datos dentro de input: bd_Panama
