@@ -1,5 +1,6 @@
 # Librerias de Proyeccion
 
+#### Esta versión se encuentra actualizada al 24/06/2020.
 
 ## Instaladores
 
@@ -7,8 +8,6 @@ Este programa sirve para instalar las librerias requeridas para realizar las est
     
 ## Proceso de proyecciones
 
-
-![alt text](https://github.com/ApoyoAnalytics/PIBNowcast/blob/cambio_de_nombre/proceso.jpg?raw=true)
 
 ### Proyeccion mensual - ARIMA (p1ARIMA)
 
